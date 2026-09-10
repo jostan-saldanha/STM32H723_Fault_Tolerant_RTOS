@@ -156,5 +156,28 @@ The WeAct STM32H723 board can be flashed directly through its onboard USB-C port
     │       ├── app.c            # Fault-tolerant RTOS tasks & state machine
     │       └── mpu6050.c        # I2C driver supporting MPU6050 and MPU6500
     ├── Drivers/                 # STM32H7 HAL drivers & CMSIS
-    └── Middlewares/             # FreeRTOS kernel source code
 ```
+
+---
+
+## 6. Git Repository & Publishing to a Private Remote
+
+This project is initialized as a clean Git repository with `.gitignore` properly excluding all build binaries (`.elf`, `.bin`, `.hex`, `.o`, `.d`), disassemblies, logs, and temporary debugging captures while tracking all source files and project metadata.
+
+To publish this project to your private GitHub repository:
+
+### Step 1: Create a new Private Repository on GitHub
+1. Go to [github.com/new](https://github.com/new).
+2. Name your repository (e.g. `STM32H723_Fault_Tolerant_RTOS`).
+3. Select **Private**.
+4. **Do NOT check** "Add a README file", "Add .gitignore", or "Choose a license" (they are already created locally).
+5. Click **Create repository**.
+
+### Step 2: Push Your Local Repository
+Open PowerShell or your terminal in this directory (`d:\H723VGT6\H723VGT6`) and run:
+```bash
+git branch -M main
+git remote add origin https://github.com/<YOUR_USERNAME>/<YOUR_REPOSITORY_NAME>.git
+git push -u origin main
+```
+*(Git Credential Manager will prompt for your GitHub login or Personal Access Token if not already authenticated).*
