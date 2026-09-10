@@ -1,0 +1,11 @@
+../Core/Src/mpu6050.c:19:17:I2C_WaitForReady	3
+../Core/Src/mpu6050.c:28:25:WriteRegister	3
+../Core/Src/mpu6050.c:43:25:ReadBytes	3
+../Core/Src/mpu6050.c:58:25:WriteAndVerify	4
+../Core/Src/mpu6050.c:68:16:Signed16	1
+../Core/Src/mpu6050.c:73:6:MPU6050_Bind	1
+../Core/Src/mpu6050.c:80:18:MPU6050_Initialize	8
+../Core/Src/mpu6050.c:101:18:MPU6050_Read	5
+../Core/Src/mpu6050.c:119:18:MPU6050_Recover	3
+../Core/Src/mpu6050.c:135:6:MPU6050_IsConnected	1
+../Core/Src/mpu6050.c:136:10:MPU6050_LastI2cError	1
